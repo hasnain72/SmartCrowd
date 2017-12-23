@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen
+xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+<android.support.v7.preference.PreferenceCategory
+    android:title="Profile"
+    android:layout="@layout/preference_category_settings">
+
+    <android.support.v7.preference.Preference
+        android:key="name"
+        android:title="Name"
+        android:summary="Muhammad Zafar Khan"
+        android:enabled="true" />
+
+
+    <android.support.v7.preference.Preference
+        android:key="mobile"
+        android:title="Mobile"
+        android:summary="+923155053968"
+        android:enabled="true" />
+
+
+    <android.support.v7.preference.Preference
+        android:key="email"
+        android:title="Email"
+        android:summary="zafarkhan1183@gmail.com"
+        android:enabled="true" />
+
+    <android.support.v7.preference.EditTextPreference
+        android:key="change_password"
+        android:title="Change password"
+        android:enabled="true" />
+
+</android.support.v7.preference.PreferenceCategory>
+    <android.support.v7.preference.PreferenceCategory
+        android:title="General"
+        android:layout="@layout/preference_category_settings">
+
+        <android.support.v7.preference.Preference
+            android:key="rates"
+            android:title="Rates"
+            android:enabled="true" />
+
+        <android.support.v7.preference.Preference
+            android:key="rate_the_app"
+            android:title="Rate the App"
+            android:enabled="true" />
+
+        <android.support.v7.preference.Preference
+            android:key="terms_and_conditions"
+            android:title="Terms and Conditions"
+            android:enabled="true" />
+
+    </android.support.v7.preference.PreferenceCategory>
+
+
+<android.support.v7.preference.PreferenceCategory
+    android:title="About"
+    android:layout="@layout/preference_category_settings"
+    android:key="about_main">
+
+    <android.support.v7.preference.Preference
+            android:key="app_version"
+            android:title="App Version"
+            android:summary="8.4.2(8420)(08 Aug, 2017)"
+            android:enabled="true" />
+
+    <android.support.v7.preference.Preference
+            android:key="signout"
+            android:title="Sign out"
+            android:enabled="true" />
+</android.support.v7.preference.PreferenceCategory>
+
+</android.support.v7.preference.PreferenceScreen>

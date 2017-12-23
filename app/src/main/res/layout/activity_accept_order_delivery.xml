@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_order_accepted"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+
+    tools:context="com.example.zafar.sartcrowd.activity.AcceptOrderDelivery">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/banner"
+        android:background="#25496D">
+
+        <TextView
+            android:text="Order Delivered"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/order_report"
+            android:layout_marginTop="50dp"
+            android:textColor="#ffffff"
+            android:textSize="30dp"
+            android:gravity="center"
+            android:textStyle="bold"
+            android:paddingTop="20dp"
+            android:layout_marginBottom="50dp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:id="@+id/distance"
+        android:layout_below="@+id/banner">
+
+        <TextView
+            android:text="No of Products"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView9"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="2.5 Km/"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/total_products_accepting"
+            android:textColor="#191919"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:layout_marginTop="30dp"
+        android:layout_below="@id/distance"
+        android:id="@+id/price">
+
+        <TextView
+            android:text="Total Price"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView11"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="Rs.250/-"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/total_price_accepting"
+            android:textColor="#191919"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/price"
+        android:id="@+id/discount"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:text="Discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView2"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="Rs.0/-"
+            android:gravity="center"
+            android:textColor="#191919"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/total_discount_accepting"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/discount"
+        android:id="@+id/resource_person_accepting"
+        android:layout_marginTop="30dp"
+        android:paddingLeft="16dp">
+
+        <TextView
+            android:text="Resource #"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView5"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="-Kasdlsakdba"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/resource_p_accepting"
+            android:textColor="#191919"
+            android:gravity="center"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="20dp"
+        android:gravity="bottom"
+        android:layout_below="@+id/resource_person_accepting">
+
+        <Button
+            android:text="Accept"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/accept_delivery"
+            android:layout_weight="1" />
+
+        <Button
+            android:text="Reject"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/reject_delivery"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+
+</RelativeLayout>

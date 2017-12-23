@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "749226923425",
+    "firebase_url": "https://smartcrowd-7a056.firebaseio.com",
+    "project_id": "smartcrowd-7a056",
+    "storage_bucket": "smartcrowd-7a056.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:749226923425:android:148967aa3d84d100",
+        "android_client_info": {
+          "package_name": "com.example.zafar.sartcrowd"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "749226923425-os792m9rsbfsqu5qls2kajbonbqj4m2q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAVUeF72ItfZaLBb37oess-nmg5OccSqlQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

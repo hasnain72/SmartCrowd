@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.preference.PreferenceScreen
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Cash"
+        android:layout="@layout/preference_category_wallet">
+
+
+        <android.support.v7.preference.Preference
+            android:key="cash_amount"
+            android:title="Cash"
+            android:layout="@layout/wallet_cash_show"
+            android:enabled="true" />
+
+    </android.support.v7.preference.PreferenceCategory>
+
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Current payment method"
+        android:layout="@layout/preference_category_wallet">
+
+        <android.support.v7.preference.Preference
+            android:icon="@drawable/dollar"
+            android:key="cash"
+            android:title="Cash"
+            android:enabled="true" />
+
+
+        <android.support.v7.preference.Preference
+            android:icon="@drawable/creditcard"
+            android:key="add_credit_card"
+            android:title="Add Credit Card"
+            android:enabled="true" />
+
+    </android.support.v7.preference.PreferenceCategory>
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Topup Credit"
+        android:layout="@layout/preference_category_wallet">
+
+        <android.support.v7.preference.Preference
+            android:icon="@drawable/creditcard"
+            android:key="credit_card"
+            android:title="Credit Card"
+            android:enabled="true" />
+
+        <android.support.v7.preference.EditTextPreference
+            android:icon="@drawable/redeem"
+            android:key="redeem_voucher"
+            android:title="Redeem Voucher"
+            android:enabled="true" />
+
+    </android.support.v7.preference.PreferenceCategory>
+
+
+    <android.support.v7.preference.PreferenceCategory
+        android:title="Credit"
+        android:layout="@layout/preference_category_wallet">
+
+        <android.support.v7.preference.SwitchPreferenceCompat
+            android:key="use_credit_card"
+            android:title="Use credit first"
+            android:enabled="true" />
+
+
+    </android.support.v7.preference.PreferenceCategory>
+
+</android.support.v7.preference.PreferenceScreen>

@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_marginLeft="-16dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp" />
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:text="Fresho"
+                android:layout_marginTop="5dp"
+                android:textColor="#ff0022"
+                android:layout_width="match_parent"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:id="@+id/p_fresho"
+                android:layout_weight="1" />
+
+            <ImageButton
+                android:layout_width="60dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                app:srcCompat="@drawable/trash_black"
+                android:id="@+id/trash"
+                android:layout_marginRight="5dp"
+                android:layout_weight="1"
+                android:background="@android:color/transparent" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:id="@+id/p_title" />
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="4dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:textStyle="bold"
+                android:id="@+id/p_price"
+                android:layout_weight="1" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/border_button"
+                android:layout_height="wrap_content">
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/reduce"
+                    android:id="@+id/reduce_image_button"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:background="@android:color/transparent"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:layout_width="4dp" />
+
+                <TextView
+                    android:text="12"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/quantity"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:textColor="#ffffff"
+                    android:layout_marginRight="-25dp"
+                    android:layout_width="0dp" />
+
+                <ImageButton
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@drawable/add"
+                    android:id="@+id/add_image_button"
+                    android:layout_weight="1"
+                    android:layout_gravity="right"
+                    android:focusable="false"
+                    android:focusableInTouchMode="false"
+                    android:background="@android:color/transparent"
+                    android:layout_width="4dp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
